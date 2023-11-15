@@ -1,3 +1,7 @@
+import unittest
+
+from square import square 
+
 class TestSquare(unittest.TestCase):
 
     def test_positives(self):
@@ -6,3 +10,10 @@ class TestSquare(unittest.TestCase):
 
     def test_negatives(self):
         self.assertEqual(square(-2), 4)
+
+    def test_zeros(self):
+        # delete "pass", and add your test here
+        pass
+
+if __name__ == '__main__':
+    unittest.main()
